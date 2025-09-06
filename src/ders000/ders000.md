@@ -48,6 +48,33 @@ public class Main {
 }
 ```
 
+---
+
+## main metodu:
+
+* `Metod`, kelime anlamıyla *işlev*, *fonksiyon* anlamına gelir.
+
+* `main` ise *ana*, *baş* gibi anlamlar taşır.
+
+* main metodu, çalıştırılabilir bir programa nerden başlaması gerektiğini bildiren metottur.
+
+* çalıştırılabilir bir programda main metodu bulunmadığında `hata verir`.
+
+> Java'da main metodu şöyle tanımlanır:
+
+```java
+public class Main {
+    public static void main (String[] args) {
+        // çalıştırılabilir programın başlangıç noktası
+    }
+}
+```
+* şimdilik `public`, `static` gibi anahtar kelimelere takılmayın, bir kulak dolgunluğu yeterlidir.
+
+## Algoritma akışı:
+
+* bir algoritma akışında komutlar yurıdan aşağıya doğru akar.
+
 * her bir komuttan sonra `;` ile işlem adımının bittiği belirtilir.
 
 * boşluk karakteri ve satır atlama, derleyici tarafından görünmez, 
@@ -56,12 +83,30 @@ public class Main {
 
 ## Ekrana çıktı verme:
 
-* `System.out.println("metinsel ifade");` ile çift tırnak içine aldığımız metinsel ifadeleri ekrana çıktı verebiliriz.
+* `System.out.println();` metodu ile çift tırnak içine aldığımız metinsel ifadeleri ekrana çıktı verebiliriz.
+    - `println` metodu, çıktıyı konsola verdiktan sonra imleci bir satır aşağı kaydırır.
+    - `print` metodu ise imleci olduğu yerde tutar.
 
 ```java
-System.out.println("Hello World !");
+class Main {
+    public static void main (String[] args) {
+        System.out.println("Merhaba Java severler !");
+        System.out.print("Merhaba");
+        System.out.print("Ben Berat");
+    }
+}
+
+/*      ÇIKTI:
+Merhaba Java severler !
+MerhabaBen Berat
+
+*/
 ```
 
-> Örnek kodlara bakmayı unutmayınız.
+* şeklinde ilk çalıştırılabilir kodu oluşturmuş bulunmaktayız.
+
+> .java dosyalarındaki örnek kodlara bakmayı unutmayınız.
 
 **Author:** Berat Kurt
+
+![Horse Reaction](./images/horse-stare.gif)
